@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="form-section">
+        <h1>Enter Your Information</h1>
+        <form action="/submit" method="POST" autocomplete="on">
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <!-- Course -->
+            <div class="form-group">
+                <label for="course">Course Name:</label>
+                <input type="text" id="course" name="course" placeholder="Enter your course" required>
+            </div>
+
+            <!-- Type of Course -->
+            <div class="form-group">
+                <label for="course-type">Type of Course:</label>
+                <select id="course-type" name="course-type" required>
+                    <option value="">Select a course type</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="postgraduate">Postgraduate</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="certificate">Certificate</option>
+                </select>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
