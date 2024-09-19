@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="form-section">
-        <h1>Enter Your Information</h1>
+        <h1>Enter Your Information:</h1>
         <form action="/submit" method="POST" autocomplete="on">
             <!-- Email -->
             <div class="form-group">
@@ -17,6 +17,12 @@
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
             
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+            </div>
+
             <!-- Course -->
             <div class="form-group">
                 <label for="course">Course Name:</label>
